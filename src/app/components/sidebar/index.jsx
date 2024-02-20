@@ -11,7 +11,7 @@ export function Sidebar() {
   return (
     <aside
       className="flex flex-col w-80 h-screen bg-secondary
-     text-white items-center mt-0 fixed z-10 top-0 left-0"
+     text-white items-center mt-0 fixed z-20 top-0 left-0 bg-opacity-70"
     >
       <div className="mt-14">
         <Image
@@ -26,7 +26,7 @@ export function Sidebar() {
           alt="Asas"
           width={200}
           height={200}
-          className="mb-6 mt-4"
+          className="mb-6 mt-3"
         />
 
         <ul className=" text-textSecondary">
@@ -64,7 +64,7 @@ export function Sidebar() {
           alt="Nave com icones"
           width={220}
           height={220}
-          className="mt-14"
+          className="mt-16"
         />
       </div>
     </aside>
