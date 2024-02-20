@@ -16,12 +16,14 @@ const Magnetic = ({ children }) => {
       ease: "elastic.out(1, 0.3)",
     });
 
+    const intensity = 0.5;
+
     const handleMouseMove = (e) => {
       const { clientX, clientY } = e;
       const { height, width, left, top } =
         magneticRef.current.getBoundingClientRect();
-      const x = clientX - (left + width / 2);
-      const y = clientY - (top + height / 2);
+      const x = (clientX - (left + width / 4)) * intensity;
+      const y = (clientY - (top + height / 4)) * intensity;
       xTo(x);
       yTo(y);
     };
