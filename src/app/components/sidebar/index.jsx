@@ -1,12 +1,19 @@
 "use client";
-import { useState } from "react";
 
 import Image from "next/image";
+import Magnetic from "../magnetic";
 import { bubble as Menu } from "react-burger-menu";
+
+import { VscGithub } from "react-icons/vsc";
+
 import fotoperfil from "@/assets/foto-pessoal.png";
 import asas from "@/assets/asas.svg";
-import ship from "@/assets/socialship.svg";
-import Magnetic from "../magnetic";
+import ship from "@/assets/socialship4.svg";
+import gitLogo from "@/assets/logos/github.svg";
+import linkdedIn from "@/assets/logos/linkedin.svg";
+import discord from "@/assets/logos/discord.svg";
+import spotfy from "@/assets/logos/spotify.svg";
+import steam from "@/assets/logos/steam.svg";
 
 export function Sidebar() {
   return (
@@ -56,14 +63,77 @@ export function Sidebar() {
             </Magnetic>
           </ul>
 
-          <div className="">
+          <div className="fixed bottom-2 ">
             <Image
               src={ship}
               alt="Nave com icones"
-              width={220}
-              height={220}
-              className="mt-40 md:mt-16 "
+              width={200}
+              height={200}
+              className=" md:mt-20 w-40 sm:w-52 "
             />
+            <div>
+              <a href="https://github.com/gabrielbasaglia" target="_blank">
+                <Image
+                  src={gitLogo}
+                  width={26}
+                  height={26}
+                  alt="logo do github"
+                  className="absolute bottom-[152px] left-[97px]"
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/gabrielbasaglia/"
+                target="_blank"
+              >
+                <Image
+                  src={linkdedIn}
+                  width={24}
+                  height={24}
+                  alt="logo linkedin"
+                  className="absolute bottom-[124px] left-[110px]"
+                />
+              </a>
+
+              <a
+                href="https://open.spotify.com/user/12166834458?si=HP3aTy7rS8K_qxWJ6Jrl5Q&nd=1&dlsi=079933887bd34e5a"
+                target="_blank"
+              >
+                <Image
+                  src={spotfy}
+                  width={24}
+                  height={24}
+                  alt="logo discord"
+                  className="absolute bottom-[124px] left-[82px]"
+                />
+              </a>
+
+              <a
+                href="https://steamcommunity.com/id/gababulldog/"
+                target="_blank"
+              >
+                <Image
+                  src={steam}
+                  width={24}
+                  height={24}
+                  alt="logo discord"
+                  className="absolute bottom-[94px] left-[82px]"
+                />
+              </a>
+
+              <a
+                href="https://discordapp.com/users/Bulldog#3803"
+                target="_blank"
+              >
+                <Image
+                  src={discord}
+                  width={24}
+                  height={24}
+                  alt="logo discord"
+                  className="absolute bottom-[94px] left-[110px]"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </aside>
