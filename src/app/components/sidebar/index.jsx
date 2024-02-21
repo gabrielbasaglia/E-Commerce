@@ -11,7 +11,7 @@ import Magnetic from "../magnetic";
 export function Sidebar() {
   return (
     <Menu isOpen={true} noOverlay>
-      <aside className="fixed flex bg-secondary h-screen w-full ">
+      <aside className="fixed flex bg-secondary h-screen w-full">
         <div className="flex flex-col items-center mt-14 w-full">
           <Image
             src={fotoperfil}
@@ -62,7 +62,7 @@ export function Sidebar() {
               alt="Nave com icones"
               width={220}
               height={220}
-              className="md:mt-16 "
+              className="mt-40 md:mt-16 "
             />
           </div>
         </div>
