@@ -1,18 +1,31 @@
 "use client";
-import { useState } from "react";
 
+import { useState } from "react";
 import Image from "next/image";
+import Magnetic from "../magnetic";
+
 import { bubble as Menu } from "react-burger-menu";
+
+import { HamburgerIcon } from "../hamburguer-icon";
 import fotoperfil from "@/assets/foto-pessoal.png";
 import asas from "@/assets/asas.svg";
 import ship from "@/assets/socialship.svg";
-import Magnetic from "../magnetic";
 
 export function Sidebar() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <Menu isOpen={true} noOverlay>
-      <aside className="fixed flex bg-secondary h-screen w-full ">
-        <div className="flex flex-col items-center mt-14 w-full">
+    <Menu>
+      <aside>
+        <button onClick={toggleSidebar}>
+          <HamburgerIcon />
+        </button>
+
+        <div className="mt-14">
           <Image
             src={fotoperfil}
             alt="Foto de perfil"
@@ -28,7 +41,7 @@ export function Sidebar() {
             className="mb-6 mt-3"
           />
 
-          <ul className="flex flex-col mr-20 mt-8 text-textSecondary">
+          <ul className=" text-textSecondary">
             <Magnetic>
               <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
                 <a href="">Projetos</a>
@@ -50,21 +63,21 @@ export function Sidebar() {
               </li>
             </Magnetic>
             <Magnetic>
-              <li className="text-lg font-semibold hover:text-red-100 duration-300 ease-out">
+              <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
                 <a href="">Contato</a>
               </li>
             </Magnetic>
           </ul>
+        </div>
 
-          <div className="">
-            <Image
-              src={ship}
-              alt="Nave com icones"
-              width={220}
-              height={220}
-              className="md:mt-16 "
-            />
-          </div>
+        <div className="relative">
+          <Image
+            src={ship}
+            alt="Nave com icones"
+            width={220}
+            height={220}
+            className="md:mt-16"
+          />
         </div>
       </aside>
     </Menu>

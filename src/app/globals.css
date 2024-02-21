@@ -5,3 +5,30 @@
 :root {
   background-color: #252a34;
 }
+
+.bm-burger-button {
+  position: fixed;
+  width: 24px;
+  height: 20px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: #f2f2f2;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #22d3ee;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bf2424;
+}
