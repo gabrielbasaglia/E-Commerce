@@ -19,10 +19,10 @@ export default function HeroSection(toggleSidebar) {
               Eu sou o{" "}
               <span className="text-textSecondary">Gabriel Basaglia</span>
             </h1>
-            <h2 className="text-textPrimary text-2xl">
+            <h2 className="text-textPrimary text-2xl mt-4">
               Desenvolvedor FullStack
             </h2>
-            <p className="text-textPrimary text-md mt-5 lg:mr-72">
+            <p className="text-textPrimary text-md mt-4 lg:mr-72">
               This is Astrofy a free and open-source template for your Personal
               Portfolio Website built with Astro and TailwindCSS. Create in
               minutes a website with Blog, CV, Project Section, Store and RSS
