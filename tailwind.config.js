@@ -13,6 +13,14 @@ module.exports = {
         textPrimary: "#F2F2F2",
         textSecondary: "#22D3EE",
       },
+      screens: {
+        xxs: "370px",
+        xs: "475px",
+        sm: "576px",
+        md: "768px",
+        lg: "992px",
+        xl: "1200px",
+      },
     },
   },
 

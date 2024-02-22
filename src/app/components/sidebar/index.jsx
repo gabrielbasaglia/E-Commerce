@@ -63,22 +63,22 @@ export function Sidebar() {
             </Magnetic>
           </ul>
 
-          <div className="fixed bottom-2 ">
+          <div className="fixed bottom-0 ">
             <Image
               src={ship}
               alt="Nave com icones"
               width={200}
               height={200}
-              className=" md:mt-20 w-40 sm:w-52 "
+              className=" w-52 invisible xxs:visible"
             />
-            <div>
+            <div className="flex gap-4 mb-2 xxs:mb-0">
               <a href="https://github.com/gabrielbasaglia" target="_blank">
                 <Image
                   src={gitLogo}
                   width={26}
                   height={26}
                   alt="logo do github"
-                  className="absolute bottom-[152px] left-[97px]"
+                  className="xxs:absolute xxs:bottom-[152px] xxs:left-[97px] "
                 />
               </a>
 
@@ -91,7 +91,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo linkedin"
-                  className="absolute bottom-[124px] left-[110px]"
+                  className="xxs:absolute xxs:bottom-[124px] xxs:left-[110px]"
                 />
               </a>
 
@@ -104,7 +104,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo discord"
-                  className="absolute bottom-[124px] left-[82px]"
+                  className="xxs:absolute xxs:bottom-[124px] xxs:left-[82px]"
                 />
               </a>
 
@@ -117,7 +117,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo discord"
-                  className="absolute bottom-[94px] left-[82px]"
+                  className="xxs:absolute xxs:bottom-[94px] xxs:left-[82px]"
                 />
               </a>
 
@@ -130,7 +130,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo discord"
-                  className="absolute bottom-[94px] left-[110px]"
+                  className="xxs:absolute xxs:bottom-[94px] xxs:left-[110px]"
                 />
               </a>
             </div>
