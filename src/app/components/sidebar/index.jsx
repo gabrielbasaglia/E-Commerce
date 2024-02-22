@@ -19,7 +19,7 @@ export function Sidebar() {
   return (
     <Menu isOpen={true} noOverlay>
       <aside className="fixed flex bg-secondary h-screen w-full">
-        <div className="flex flex-col items-center mt-14 w-full">
+        <div className="flex flex-col items-center mt-14 w-full ">
           <Image
             src={fotoperfil}
             alt="Foto de perfil"
@@ -63,13 +63,13 @@ export function Sidebar() {
             </Magnetic>
           </ul>
 
-          <div className="fixed bottom-0 ">
+          <div className="fixed bottom-2">
             <Image
               src={ship}
               alt="Nave com icones"
               width={200}
               height={200}
-              className=" w-52 invisible xxs:visible"
+              className=" w-52 invisible lg:visible"
             />
             <div className="flex gap-4 mb-2 xxs:mb-0">
               <a href="https://github.com/gabrielbasaglia" target="_blank">
@@ -78,7 +78,7 @@ export function Sidebar() {
                   width={26}
                   height={26}
                   alt="logo do github"
-                  className="xxs:absolute xxs:bottom-[152px] xxs:left-[97px] "
+                  className="lg:absolute lg:bottom-[152px] lg:left-[97px] "
                 />
               </a>
 
@@ -91,7 +91,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo linkedin"
-                  className="xxs:absolute xxs:bottom-[124px] xxs:left-[110px]"
+                  className="lg:absolute lg:bottom-[124px] lg:left-[110px]"
                 />
               </a>
 
@@ -104,7 +104,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo discord"
-                  className="xxs:absolute xxs:bottom-[124px] xxs:left-[82px]"
+                  className="lg:absolute lg:bottom-[124px] lg:left-[82px]"
                 />
               </a>
 
@@ -117,7 +117,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo discord"
-                  className="xxs:absolute xxs:bottom-[94px] xxs:left-[82px]"
+                  className="lg:absolute lg:bottom-[94px] lg:left-[82px]"
                 />
               </a>
 
@@ -130,7 +130,7 @@ export function Sidebar() {
                   width={24}
                   height={24}
                   alt="logo discord"
-                  className="xxs:absolute xxs:bottom-[94px] xxs:left-[110px]"
+                  className="lg:absolute lg:bottom-[94px] lg:left-[110px]"
                 />
               </a>
             </div>

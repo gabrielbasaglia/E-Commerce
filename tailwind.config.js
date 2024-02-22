@@ -14,7 +14,7 @@ module.exports = {
         textSecondary: "#22D3EE",
       },
       screens: {
-        xxs: "380px",
+        xxs: "395px",
         xs: "475px",
         sm: "576px",
         md: "768px",
