@@ -6,6 +6,10 @@
   background-color: #252a34;
 }
 
+body {
+  color: #f2f2f2;
+}
+
 .bm-burger-button {
   position: fixed;
   width: 24px;
@@ -32,4 +36,17 @@
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bf2424;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 3s linear infinite alternate;
 }
