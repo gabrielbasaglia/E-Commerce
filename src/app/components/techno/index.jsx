@@ -11,8 +11,8 @@ export function Techno() {
         <h1 className="font-semibold text-2xl">Ferramentas</h1>
       </div>
 
-      <div className="border-y-2 mt-4 border-slate-500 flex gap-20 md:-ml-[85px] whitespace-nowrap overflow-hidden">
-        <div className=" animate-slide flex md:gap-20">
+      <div className="border-y-2 mt-4 border-slate-500 flex md:gap-20 md:-ml-[85px] whitespace-nowrap overflow-hidden">
+        <div className=" animate-slide flex gap-4 md:gap-20">
           <div className="">
             <ul className="flex my-4 gap-4 md:gap-20 ">
               <li className="flex gap-4 items-center">
