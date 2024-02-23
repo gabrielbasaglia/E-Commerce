@@ -40,13 +40,13 @@ body {
 
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-150px * 10));
   }
 }
 
 .animate-slide {
-  animation: slide 3s linear infinite alternate;
+  animation: slide 35s linear infinite alternate;
 }

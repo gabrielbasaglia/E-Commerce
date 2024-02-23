@@ -1,85 +1,62 @@
 "use client";
+import React, { useEffect, useRef } from "react";
+import { FaTools, FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiMongodb, SiAstro, SiTailwindcss } from "react-icons/si";
 
-import { useState } from "react";
-import Image from "next/image";
-import Magnetic from "../magnetic";
+const technologies = [
+  { icon: <FaReact size={56} />, label: "React" },
+  { icon: <SiMongodb size={56} />, label: "Mongodb" },
+  { icon: <FaNodeJs size={56} />, label: "NodeJs" },
+  { icon: <TbBrandNextjs size={56} />, label: "NextJs" },
+  { icon: <SiAstro size={56} />, label: "Astro" },
+  { icon: <SiTailwindcss size={56} />, label: "Tailwind" },
+  { icon: <FaPython size={56} />, label: "Python" },
+];
 
-import { bubble as Menu } from "react-burger-menu";
+export function Techno() {
+  const iconsRef = useRef(null);
 
-import { HamburgerIcon } from "../hamburguer-icon";
-import fotoperfil from "@/assets/foto-pessoal.png";
-import asas from "@/assets/asas.svg";
-import ship from "@/assets/socialship.svg";
+  useEffect(() => {
+    const icons = iconsRef.current.querySelectorAll(".animate-slide");
 
-export function Sidebar() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
+    icons.forEach((icon, index) => {
+      icon.style.transition = "transform 0.3s ease";
+      icon.style.transform = `translateX(${index * 50}px)`;
+    });
+  }, []);
 
   return (
-    <Menu>
-      <aside>
-        <button onClick={toggleSidebar}>
-          <HamburgerIcon />
-        </button>
-
-        <div className="mt-14">
-          <Image
-            src={fotoperfil}
-            alt="Foto de perfil"
-            width={200}
-            height={200}
-            className="rounded-full"
-          />
-          <Image
-            src={asas}
-            alt="Asas"
-            width={200}
-            height={200}
-            className="mb-6 mt-3"
-          />
-
-          <ul className=" text-textSecondary">
-            <Magnetic>
-              <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                <a href="">Projetos</a>
-              </li>
-            </Magnetic>
-            <Magnetic>
-              <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                <a href="">Habilidades</a>
-              </li>
-            </Magnetic>
-            <Magnetic>
-              <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                <a href="">Sobre</a>
-              </li>
-            </Magnetic>
-            <Magnetic>
-              <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                <a href="">CV</a>
-              </li>
-            </Magnetic>
-            <Magnetic>
-              <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                <a href="">Contato</a>
-              </li>
-            </Magnetic>
-          </ul>
-        </div>
-
-        <div className="relative">
-          <Image
-            src={ship}
-            alt="Nave com icones"
-            width={220}
-            height={220}
-            className="md:mt-16"
-          />
-        </div>
-      </aside>
-    </Menu>
+    <section className="md:ml-96">
+      <div className="flex items-center gap-2 text-textPrimary">
+        <h1 className="font-semibold text-2xl">Tecnologias</h1>
+        <FaTools />
+        <h1 className="font-semibold text-2xl">Ferramentas</h1>
+      </div>
+      <div
+        ref={iconsRef}
+        className="border-y-2 mt-4 overflow-hidden border-slate-500 flex gap-20 md:-ml-[85px]"
+      >
+        {technologies.map(({ icon, label }, index) => (
+          <div
+            key={index}
+            className="flex gap-4 items-center transition-transform ease-in-out duration-300 transform animate-slide"
+          >
+            <p>{icon}</p>
+            <p className="my-6">{label}</p>
+          </div>
+        ))}
+        {/* Clones dos ícones */}
+        {technologies.map(({ icon, label }, index) => (
+          <div
+            key={`clone-${index}`}
+            className="flex gap-4 items-center transition-transform ease-in-out duration-300 transform animate-slide"
+          >
+            <p>{icon}</p>
+            <p className="my-6">{label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
