@@ -17,7 +17,7 @@ import steam from "@/assets/logos/steam.svg";
 
 export function Sidebar() {
   return (
-    <Menu isOpen={true} noOverlay>
+    <Menu isOpen={true} noOverlay disableOverlayClick>
       <aside className="fixed flex bg-secondary h-screen w-full">
         <div className="flex flex-col items-center mt-14 w-full ">
           <Image

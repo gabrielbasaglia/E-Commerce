@@ -38,6 +38,11 @@ body {
   background: #bf2424;
 }
 
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0px);
