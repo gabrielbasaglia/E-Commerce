@@ -22,7 +22,7 @@ export default function Projetos() {
               alt="foto projeto 1"
               width={300}
               height={300}
-              className="w-full flex-1"
+              className="w-full flex-1 shadow-3xl "
             />
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
               <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
@@ -65,7 +65,7 @@ export default function Projetos() {
               alt="foto projeto 2"
               width={300}
               height={300}
-              className="w-full flex-1"
+              className="w-full flex-1 shadow-3xl"
             />
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
               <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
@@ -107,7 +107,7 @@ export default function Projetos() {
               alt="foto projeto 3"
               width={300}
               height={300}
-              className="w-full flex-1"
+              className="w-full flex-1 shadow-3xl"
             />
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
               <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">

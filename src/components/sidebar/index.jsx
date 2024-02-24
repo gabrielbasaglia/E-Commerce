@@ -61,7 +61,7 @@ export default function Sidebar() {
             </Magnetic>
           </ul>
 
-          <div className="fixed bottom-2">
+          <div className="absolute bottom-0 mb-14 md:mb-6">
             <Image
               src={ship}
               alt="Nave com icones"
