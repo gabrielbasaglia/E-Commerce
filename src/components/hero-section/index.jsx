@@ -1,24 +1,35 @@
 "use client";
-import bgmain from "../../../public/assets/bg-main.png";
+
 import Image from "next/image";
 import { Techno } from "../techno";
 import { Container } from "../container";
 import Projetos from "../projetos";
 
+import bgmain from "../../../public/assets/bg-main.png";
+import cometa from "../../../public/assets/cometa.svg";
+
 export default function HeroSection(toggleSidebar) {
   return (
     <main className="md:relative flex h-screen flex-col">
-      <Image
-        src={bgmain}
-        alt="Background"
-        className="absolute top-0 left-0 w-full h-full bg-fixed bg-cover opacity-5"
-      />
+      <div className="">
+        <Image
+          src={bgmain}
+          alt="Background"
+          className="absolute top-0 left-0 w-full h-full bg-fixed bg-cover opacity-5 "
+        />
+        <Image
+          src={cometa}
+          alt="foto de cometa"
+          className="absolute top-0 right-0 
+          w-44 h-44 md:w-80 md:h-80"
+        />
+      </div>
 
       <Container>
         <section className="mx-auto z-10 w-full mt-14">
-          <div className="md:p-0 md:ml-96 md:mr-16 px-5">
+          <div className="md:p-0 md:ml-48 md:mr-16 px-5">
             <h3 className="text-textPrimary text-lg ">Olá, tudo bem por aí?</h3>
-            <h1 className="text-5xl text-textPrimary">
+            <h1 className="text-5xl font-semibold text-textPrimary">
               Eu sou o{" "}
               <span className="text-textSecondary">Gabriel Basaglia</span>
             </h1>

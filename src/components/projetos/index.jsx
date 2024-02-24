@@ -8,7 +8,7 @@ import Instasany from "../../../public/assets/projetos/Instasany.png";
 export default function Projetos() {
   return (
     <Container>
-      <article className="mt-20 md:p-0 md:ml-96 md:mr-16  ">
+      <article className="mt-20 md:p-0 md:ml-48 md:mr-16  ">
         <div className="text-2xl">
           <h1 className="font-bold">
             Meus Projetos <span className="pl-2">&lt;/&gt;</span>
@@ -16,7 +16,7 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-4 ">
-          <div className="relative flex flex-col justify-between min-w-80">
+          <div className="relative flex flex-col justify-between min-w-80 w-80">
             <Image
               src={geradorProposta}
               alt="foto projeto 1"
@@ -59,7 +59,7 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-10  ">
-          <div className="relative flex flex-col justify-between min-w-80">
+          <div className="relative flex flex-col justify-between min-w-80 w-80">
             <Image
               src={blogAstro}
               alt="foto projeto 2"
@@ -101,7 +101,7 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-10 mb-20 ">
-          <div className="relative flex flex-col justify-between min-w-80">
+          <div className="relative flex flex-col justify-between min-w-80 w-80">
             <Image
               src={Instasany}
               alt="foto projeto 3"

@@ -17,7 +17,7 @@ export function Techno() {
   return (
     <section className="mt-20">
       <Container>
-        <div className="flex items-center gap-2 px-5 md:p-0 md:ml-96">
+        <div className="flex items-center gap-2 px-5 md:p-0 md:ml-48">
           <h1 className="font-semibold text-2xl">Tecnologias</h1>
           <FaTools />
           <h1 className="font-semibold text-2xl">Ferramentas</h1>
