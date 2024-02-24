@@ -55,3 +55,7 @@ body {
 .animate-slide {
   animation: slide 35s linear infinite alternate;
 }
+
+.animate-slide:hover {
+  animation-play-state: paused;
+}

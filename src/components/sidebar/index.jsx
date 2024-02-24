@@ -1,21 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import Magnetic from "../magnetic";
+import Magnetic from "../ui/magnetic";
 import { bubble as Menu } from "react-burger-menu";
 
-import { VscGithub } from "react-icons/vsc";
+import fotoperfil from "../../../public/assets/foto-pessoal.png";
+import asas from "../../../public/assets/asas.svg";
+import ship from "../../../public/assets/socialship4.svg";
+import gitLogo from "../../../public/assets/logos/github.svg";
+import linkdedIn from "../../../public/assets/logos/linkedin.svg";
+import discord from "../../../public/assets/logos/discord.svg";
+import spotfy from "../../../public/assets/logos/spotify.svg";
+import steam from "../../../public/assets/logos/steam.svg";
 
-import fotoperfil from "@/assets/foto-pessoal.png";
-import asas from "@/assets/asas.svg";
-import ship from "@/assets/socialship4.svg";
-import gitLogo from "@/assets/logos/github.svg";
-import linkdedIn from "@/assets/logos/linkedin.svg";
-import discord from "@/assets/logos/discord.svg";
-import spotfy from "@/assets/logos/spotify.svg";
-import steam from "@/assets/logos/steam.svg";
-
-export function Sidebar() {
+export default function Sidebar() {
   return (
     <Menu isOpen={true} noOverlay disableOverlayClick>
       <aside className="fixed flex bg-secondary h-screen w-full">
