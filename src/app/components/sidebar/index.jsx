@@ -71,7 +71,7 @@ export function Sidebar() {
               height={200}
               className=" w-52 invisible lg:visible"
             />
-            <div className="flex gap-4 mb-6 xxs:mb-0">
+            <div className="flex gap-4 mb-10 xss:mb-2 xxs:mb-0">
               <a href="https://github.com/gabrielbasaglia" target="_blank">
                 <Image
                   src={gitLogo}

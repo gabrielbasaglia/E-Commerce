@@ -10,7 +10,7 @@ export default function HeroSection(toggleSidebar) {
       <Image
         src={bgmain}
         alt="Background"
-        className="absolute top-0 left-0 w-full h-full bg-fixed bg-cover opacity-10 blur-sm "
+        className="absolute top-0 left-0 w-full h-full bg-fixed bg-cover opacity-5"
       />
 
       <Container>
