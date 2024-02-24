@@ -8,7 +8,7 @@ import Instasany from "../../../public/assets/projetos/Instasany.png";
 export default function Projetos() {
   return (
     <Container>
-      <article className="mt-20 md:p-0 md:ml-48 md:mr-16  ">
+      <article className="mt-20 md:p-0 md:ml-48 md:mr-16 px-5">
         <div className="text-2xl">
           <h1 className="font-bold">
             Meus Projetos <span className="pl-2">&lt;/&gt;</span>

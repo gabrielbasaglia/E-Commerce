@@ -29,7 +29,7 @@ export default function HeroSection(toggleSidebar) {
         <section className="mx-auto z-10 w-full mt-14">
           <div className="md:p-0 md:ml-48 md:mr-16 px-5">
             <h3 className="text-textPrimary text-lg ">Olá, tudo bem por aí?</h3>
-            <h1 className="text-5xl font-semibold text-textPrimary">
+            <h1 className="text-5xl font-semibold text-textPrimary w-48">
               Eu sou o{" "}
               <span className="text-textSecondary">Gabriel Basaglia</span>
             </h1>
