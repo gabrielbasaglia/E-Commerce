@@ -3,7 +3,7 @@ import { Container } from "../container";
 
 import geradorProposta from "../../../public/assets/projetos/gerador-propostas.png";
 import blogAstro from "../../../public/assets/projetos/blog-astro.png";
-import Instasany from "../../../public/assets/projetos/instasany.png";
+import Instasany from "../../../public/assets/projetos/Instasany.png";
 
 export default function Projetos() {
   return (
@@ -25,7 +25,7 @@ export default function Projetos() {
               className="w-full flex-1"
             />
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
-              <button className=" w-2/5 text-sm bg-slate-700  text-white font-bold px-2 py-1 rounded self-start">
+              <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
                 <a
                   href="https://github.com/gabrielbasaglia/proposal-generator"
                   target="_blank"
@@ -34,7 +34,7 @@ export default function Projetos() {
                 </a>
               </button>
 
-              <button className="w-2/5 text-sm bg-slate-700 text-white font-bold px-2 py-1 rounded self-start">
+              <button className="w-2/5 text-sm bg-textSecondary text-white font-bold px-2 py-1 rounded self-start">
                 <a href="https://propostasmp.vercel.app/" target="_blank">
                   Live Demo
                 </a>
@@ -68,7 +68,7 @@ export default function Projetos() {
               className="w-full flex-1"
             />
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
-              <button className=" w-2/5 text-sm bg-slate-700  text-white font-bold px-2 py-1 rounded self-start">
+              <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
                 <a
                   href="https://github.com/gabrielbasaglia/BlogAstro"
                   target="_blank"
@@ -77,7 +77,7 @@ export default function Projetos() {
                 </a>
               </button>
 
-              <button className="w-2/5 text-sm bg-slate-700 text-white font-bold px-2 py-1 rounded self-start">
+              <button className="w-2/5 text-sm bg-textSecondary text-white font-bold px-2 py-1 rounded self-start">
                 <a href="https://blog-astro-murex.vercel.app/" target="_blank">
                   Live Demo
                 </a>
@@ -110,7 +110,7 @@ export default function Projetos() {
               className="w-full flex-1"
             />
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
-              <button className=" w-2/5 text-sm bg-slate-700  text-white font-bold px-2 py-1 rounded self-start">
+              <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
                 <a
                   href="https://github.com/gabrielbasaglia/Instasany"
                   target="_blank"
@@ -119,7 +119,7 @@ export default function Projetos() {
                 </a>
               </button>
 
-              <button className="w-2/5 text-sm bg-slate-700 text-white font-bold px-2 py-1 rounded self-start">
+              <button className="w-2/5 text-sm bg-textSecondary text-white font-bold px-2 py-1 rounded self-start">
                 <a href="https://instasany-azure.vercel.app/" target="_blank">
                   Live Demo
                 </a>
