@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Container } from "../container";
 
-import geradorProposta from "../../../public/assets/projetos/gerador-propostas.png";
 import blogAstro from "../../../public/assets/projetos/blog-astro.png";
 import Instasany from "../../../public/assets/projetos/Instasany.png";
 
@@ -16,14 +15,10 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-4 ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80">
-            <Image
-              src={geradorProposta}
-              alt="foto projeto 1"
-              width={300}
-              height={300}
-              className="w-full flex-1 shadow-3xl "
-            />
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500">
+            <video autoPlay loop muted>
+              <source src={"video/geradorP-video.mp4"} type="video/mp4" />
+            </video>
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
               <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
                 <a
@@ -60,55 +55,9 @@ export default function Projetos() {
 
         <div className="flex flex-col md:flex-row gap-5 mt-10  ">
           <div className="relative flex flex-col justify-between min-w-80 w-80">
-            <Image
-              src={blogAstro}
-              alt="foto projeto 2"
-              width={300}
-              height={300}
-              className="w-full flex-1 shadow-3xl"
-            />
-            <div className="absolute bottom-0 flex justify-between w-full px-2 ">
-              <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
-                <a
-                  href="https://github.com/gabrielbasaglia/BlogAstro"
-                  target="_blank"
-                >
-                  Github
-                </a>
-              </button>
-
-              <button className="w-2/5 text-sm bg-textSecondary text-white font-bold px-2 py-1 rounded self-start">
-                <a href="https://blog-astro-murex.vercel.app/" target="_blank">
-                  Live Demo
-                </a>
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <h1
-              className="flex gap-2
-            font-semibold text-xl mb-1"
-            >
-              <span>Projeto 2:</span> Blog Astro
-            </h1>
-            <p className="text-lg">
-              Desenvolvi um blog em Astro no qual explorei as funcionalidades
-              básicas, como o consumo de APIs, a utilização de Markdown e o
-              design colaborativo.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row gap-5 mt-10 mb-20 ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80">
-            <Image
-              src={Instasany}
-              alt="foto projeto 3"
-              width={300}
-              height={300}
-              className="w-full flex-1 shadow-3xl"
-            />
+            <video autoPlay loop muted>
+              <source src={"video/instasany.mp4"} type="video/mp4" />
+            </video>
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
               <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
                 <a
@@ -132,11 +81,49 @@ export default function Projetos() {
               className="flex gap-2
             font-semibold text-xl mb-1"
             >
-              <span>Projeto 3:</span> Instasany
+              <span>Projeto 2:</span> Instasany
             </h1>
             <p className="text-lg">
               Este projeto foi desenvolvido com Nextjs14, Tailwindcss e Gsap
               para estudar animações.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-5 mt-10 mb-20 ">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500">
+            <video autoPlay loop muted>
+              <source src={"video/blog-astro.mp4"} type="video/mp4" />
+            </video>
+            <div className="absolute bottom-0 flex justify-between w-full px-2 ">
+              <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
+                <a
+                  href="https://github.com/gabrielbasaglia/BlogAstro"
+                  target="_blank"
+                >
+                  Github
+                </a>
+              </button>
+
+              <button className="w-2/5 text-sm bg-textSecondary text-white font-bold px-2 py-1 rounded self-start">
+                <a href="https://blog-astro-murex.vercel.app/" target="_blank">
+                  Live Demo
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h1
+              className="flex gap-2
+            font-semibold text-xl mb-1"
+            >
+              <span>Projeto 3:</span> Blog Astro
+            </h1>
+            <p className="text-lg">
+              Desenvolvi um blog em Astro no qual explorei as funcionalidades
+              básicas, como o consumo de APIs, a utilização de Markdown e o
+              design colaborativo.
             </p>
           </div>
         </div>

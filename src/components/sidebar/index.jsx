@@ -14,6 +14,7 @@ import discord from "../../../public/assets/logos/discord.svg";
 import spotfy from "../../../public/assets/logos/spotify.svg";
 import steam from "../../../public/assets/logos/steam.svg";
 import { ThemeProvider } from "next-themes";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -54,7 +55,7 @@ export default function Sidebar() {
               </Magnetic>
               <Magnetic>
                 <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                  <a href="">CV</a>
+                  <Link href="cv">CV</Link>
                 </li>
               </Magnetic>
               <Magnetic>

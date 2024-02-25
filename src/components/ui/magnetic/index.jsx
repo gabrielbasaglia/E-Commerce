@@ -33,12 +33,18 @@ const Magnetic = ({ children }) => {
       yTo(0);
     };
 
-    magneticRef.current.addEventListener("mousemove", handleMouseMove);
-    magneticRef.current.addEventListener("mouseleave", handleMouseLeave);
+    const currentRef = magneticRef.current;
+
+    if (currentRef) {
+      currentRef.addEventListener("mousemove", handleMouseMove);
+      currentRef.addEventListener("mouseleave", handleMouseLeave);
+    }
 
     return () => {
-      magneticRef.current.removeEventListener("mousemove", handleMouseMove);
-      magneticRef.current.removeEventListener("mouseleave", handleMouseLeave);
+      if (currentRef) {
+        currentRef.removeEventListener("mousemove", handleMouseMove);
+        currentRef.removeEventListener("mouseleave", handleMouseLeave);
+      }
     };
   }, []);
 
