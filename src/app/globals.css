@@ -2,45 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background-color: #252a34;
-}
-
-body {
-  color: #f2f2f2;
-}
-
-.bm-burger-button {
-  position: fixed;
-  width: 24px;
-  height: 20px;
-  left: 20px;
-  top: 20px;
-  opacity: 0.5;
-}
-
-.bm-burger-bars {
-  background: #f2f2f2;
-}
-
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #22d3ee;
-}
-
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bf2424;
-}
-
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
+@layer base {
+  body {
+    @apply dark:bg-gray-800 bg-textPrimary dark:text-textPrimary text-gray-900;
+  }
 }
 
 @keyframes slide {

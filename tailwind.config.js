@@ -24,6 +24,7 @@ module.exports = {
       boxShadow: {
         "3xl": "10px 10px 10px 0px rgba(0,0,0,0.40)",
       },
+      darkmode: "class",
     },
   },
 
