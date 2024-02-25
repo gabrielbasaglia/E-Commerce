@@ -54,7 +54,7 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-10  ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500">
             <video autoPlay loop muted>
               <source src={"video/instasany.mp4"} type="video/mp4" />
             </video>
