@@ -20,7 +20,7 @@ export default function Sidebar() {
   return (
     <Menu isOpen={true} noOverlay disableOverlayClick>
       <ThemeProvider>
-        <aside className="fixed bg-textPrimary dark:bg-primary flex h-screen w-full">
+        <aside className="fixed bg-textPrimary dark:bg-secondary flex h-screen w-full">
           <div className="flex flex-col items-center mt-14 w-full ">
             <Image
               src={fotoperfil}

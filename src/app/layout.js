@@ -1,3 +1,5 @@
+import { GoogleTagManager } from "@next/third-parties/google";
+
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -15,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className={`${roboto.className} dark:bg-primary`}>{children}</body>
+      <GoogleTagManager gtmId="G-7F0ZGG9EC9" />
     </html>
   );
 }
