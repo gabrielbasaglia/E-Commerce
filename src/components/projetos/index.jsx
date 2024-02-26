@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { Container } from "../container";
 
-import blogAstro from "../../../public/assets/projetos/blog-astro.png";
-import Instasany from "../../../public/assets/projetos/Instasany.png";
-
 export default function Projetos() {
   return (
     <Container>

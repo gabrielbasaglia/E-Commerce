@@ -34,7 +34,7 @@ export function Techno() {
                   {technologies.map((tech, techIndex) => (
                     <li
                       key={techIndex}
-                      className="flex gap-4 items-center hover:scale-125 ease-in duration-300"
+                      className="flex gap-4 items-center hover:scale-110 ease-in duration-300"
                     >
                       {tech.icon}
                       <p className="text-xl">{tech.name}</p>
