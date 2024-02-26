@@ -7,15 +7,15 @@ import Instasany from "../../../public/assets/projetos/Instasany.png";
 export default function Projetos() {
   return (
     <Container>
-      <article className="mt-20 md:p-0 md:ml-48 md:mr-16 px-5">
+      <article className="mt-20 md:p-0 md:ml-48 md:mr-16 px-5 ">
         <div className="text-2xl">
           <h1 className="font-bold">
             Meus Projetos <span className="pl-2">&lt;/&gt;</span>
           </h1>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-4 ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500">
+        <div className="flex flex-col md:flex-row gap-5 mt-4">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto">
             <video autoPlay loop muted>
               <source src={"video/geradorP-video.mp4"} type="video/mp4" />
             </video>
@@ -37,7 +37,7 @@ export default function Projetos() {
             </div>
           </div>
 
-          <div>
+          <div className="">
             <h1
               className="flex gap-2
             font-semibold text-xl mb-1"
@@ -54,7 +54,7 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-10  ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto">
             <video autoPlay loop muted>
               <source src={"video/instasany.mp4"} type="video/mp4" />
             </video>
@@ -91,7 +91,7 @@ export default function Projetos() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-5 mt-10 mb-20 ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto">
             <video autoPlay loop muted>
               <source src={"video/blog-astro.mp4"} type="video/mp4" />
             </video>
