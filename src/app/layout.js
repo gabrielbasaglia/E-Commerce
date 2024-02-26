@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body className={`${roboto.className} dark:bg-primary`}>{children}</body>
-      <GoogleTagManager gtmId="G-7F0ZGG9EC9" />
+      <GoogleTagManager gtmId="GTM-TJQLCBWF" />
     </html>
   );
 }
