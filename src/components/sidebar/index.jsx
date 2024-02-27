@@ -40,17 +40,17 @@ export default function Sidebar() {
             <ul className="flex flex-col mr-20 mt-8 text-textSecondary">
               <Magnetic>
                 <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                  <a href="">Projetos</a>
+                  <Link href="projetos">Projetos</Link>
                 </li>
               </Magnetic>
               <Magnetic>
                 <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                  <a href="">Habilidades</a>
+                  <Link href="habilidades">Habilidades</Link>
                 </li>
               </Magnetic>
               <Magnetic>
                 <li className="mb-4 text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                  <a href="">Sobre</a>
+                  <Link href="Sobre">Sobre</Link>
                 </li>
               </Magnetic>
               <Magnetic>
@@ -60,7 +60,7 @@ export default function Sidebar() {
               </Magnetic>
               <Magnetic>
                 <li className="text-lg font-semibold hover:text-red-100 duration-300 ease-out">
-                  <a href="">Contato</a>
+                  <a href="https://wa.me/16997511431">Contato</a>
                 </li>
               </Magnetic>
             </ul>

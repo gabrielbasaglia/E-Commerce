@@ -137,29 +137,87 @@ export default function Cv() {
                   agraciado pelo prêmio de vendedor destaque
                 </p>
               </div>
+
               <div className="mt-14 flex flex-col font-semibold">
-                <span>Consultor executivo de vendas</span>
+                <span>Gerente Comercial Externo</span>
                 <span className="text-green-600 text-sm font-normal">
-                  AXS Energia
+                  Euroanglo
                 </span>
-                <span className="text-sm font-normal">Abril 2023</span>
+                <span className="text-sm font-normal">
+                  Agosto 2022 - Março 2023
+                </span>
                 <p className="font-normal mt-2">
-                  Responsável pela captação de novos negócios no ramo da energia
-                  solar, todas as metas superadas desde o primeiro mês,
-                  agraciado pelo prêmio de vendedor destaque
+                  Responsável pela equipe externa na captação de mailing/leads,
+                  ações comerciais em shows e eventos, parcerias com empresas
+                  públicas e privadas.
                 </p>
               </div>
+
               <div className="mt-14 flex flex-col font-semibold">
-                <span>Consultor executivo de vendas</span>
+                <span>Divulgador Externo</span>
                 <span className="text-green-600 text-sm font-normal">
-                  AXS Energia
+                  Microcamp
                 </span>
-                <span className="text-sm font-normal">Abril 2023</span>
+                <span className="text-sm font-normal">
+                  Agosto 2019 - Agosto 2020
+                </span>
                 <p className="font-normal mt-2">
-                  Responsável pela captação de novos negócios no ramo da energia
-                  solar, todas as metas superadas desde o primeiro mês,
-                  agraciado pelo prêmio de vendedor destaque
+                  Trabalhando na captação de mailing/leads, parcerias com
+                  empresas públicas e privadas e realizando ações sociais
+                  agregando valores.
                 </p>
+                <ol className="mt-2 ml-8 list-disc font-normal">
+                  <li>
+                    Na área fui responsável por 3 unidades da região sendo elas:
+                    Piracicaba, Americana e Limeira.
+                  </li>
+                  <li className="my-2">
+                    Desenvolvi treinamento de vendas telemarketing aplicado nas
+                    unidades contribuindo em 37% de crescimento no resultado
+                  </li>
+                  <li>
+                    Contribuí no desenvolvimento de método de higienização de
+                    mailing para maior assertividade de contato.
+                  </li>
+                </ol>
+              </div>
+
+              <div className="mt-14 flex flex-col font-semibold">
+                <span>Gerente Comercial</span>
+                <span className="text-green-600 text-sm font-normal">
+                  Microcamp
+                </span>
+                <span className="text-sm font-normal">
+                  Janeiro 2017 - Março 2019
+                </span>
+                <p className="font-normal mt-2">
+                  Trabalhando no recrutamento, treinamento e desenvolvimento de
+                  colaboradores, planejamentos e estratégias e relatórios.
+                </p>
+                <ol className="mt-2 ml-8 list-disc font-normal">
+                  <li>
+                    Apliquei o método 5w2h para a correção dos pontos de
+                    melhoria gerando resultado positivo já no primeiro mês.
+                  </li>
+                  <li className="my-2">
+                    Através da crença de que o conhecimento é o melhor caminho
+                    para o crescimento, conseguimos ampliar a quantidade de
+                    cursos gratuitos e consequentemente elevando a procura por
+                    cursos pagos.
+                  </li>
+                </ol>
+              </div>
+
+              <h1 className="uppercase font-medium mt-14">Outros projetos</h1>
+
+              <div className="mt-2 mb-20 flex flex-col font-semibold ">
+                <span>Desenvolvedor Web</span>
+                <span className="text-green-600 text-sm font-normal">
+                  Pessoal
+                </span>
+                <span className="text-sm font-normal">
+                  Dezembro 2022 - Presente
+                </span>
               </div>
             </div>
           </div>
