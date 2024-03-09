@@ -7,15 +7,15 @@ import Instasany from "../../../public/assets/projetos/Instasany.png";
 export default function Projetos() {
   return (
     <Container>
-      <article className="mt-20 md:p-0 md:ml-48 md:mr-16 px-5 ">
+      <div className="my-20 md:p-0 md:ml-48 md:mr-16 px-5 ">
         <div className="text-2xl">
           <h1 className="font-bold">
             Meus Projetos <span className="pl-2">&lt;/&gt;</span>
           </h1>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-4">
-          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto">
+        <div className="flex flex-col lg:flex-row gap-5 mt-4">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto sm:mx-0">
             <video autoPlay loop muted>
               <source src={"video/geradorP-video.mp4"} type="video/mp4" />
             </video>
@@ -53,8 +53,8 @@ export default function Projetos() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-10  ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto">
+        <div className="flex flex-col lg:flex-row gap-5 mt-10  ">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto sm:mx-0">
             <video autoPlay loop muted>
               <source src={"video/instasany.mp4"} type="video/mp4" />
             </video>
@@ -90,15 +90,15 @@ export default function Projetos() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-10 mb-20 ">
-          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto">
+        <div className="flex flex-col lg:flex-row gap-5 mt-10">
+          <div className="relative flex flex-col justify-between min-w-80 w-80 hover:scale-125 ease-in-out duration-500 mx-auto sm:mx-0">
             <video autoPlay loop muted>
-              <source src={"video/blog-astro.mp4"} type="video/mp4" />
+              <source src={"video/blog-solar.mp4"} type="video/mp4" />
             </video>
             <div className="absolute bottom-0 flex justify-between w-full px-2 ">
               <button className=" w-2/5 text-sm bg-textSecondary  text-white font-bold px-2 py-1 rounded self-start">
                 <a
-                  href="https://github.com/gabrielbasaglia/BlogAstro"
+                  href="https://github.com/gabrielbasaglia/Blog-Solar"
                   target="_blank"
                 >
                   Github
@@ -106,7 +106,7 @@ export default function Projetos() {
               </button>
 
               <button className="w-2/5 text-sm bg-textSecondary text-white font-bold px-2 py-1 rounded self-start">
-                <a href="https://blog-astro-murex.vercel.app/" target="_blank">
+                <a href="https://blog-solar.vercel.app/" target="_blank">
                   Live Demo
                 </a>
               </button>
@@ -118,16 +118,14 @@ export default function Projetos() {
               className="flex gap-2
             font-semibold text-xl mb-1"
             >
-              <span>Projeto 3:</span> Blog Astro
+              <span>Projeto 3:</span> Blog
             </h1>
             <p className="text-lg">
-              Desenvolvi um blog em Astro no qual explorei as funcionalidades
-              básicas, como o consumo de APIs, a utilização de Markdown e o
-              design colaborativo.
+              Desenvolvi um blog com o Nextjs afim de estudo e prática de SEO.
             </p>
           </div>
         </div>
-      </article>
+      </div>
     </Container>
   );
 }
